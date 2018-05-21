@@ -1,0 +1,140 @@
+2018-05-21 12:52:00.591  INFO 1688 --- [main] c.e.p.S.SpringbootAngular4Application    : Starting SpringbootAngular4Application on BABEGIRL with PID 1688 (E:\angular\Springboot-Angular4\out\production\classes started by Praveenkumar in E:\angular\Springboot-Angular4)
+2018-05-21 12:52:00.616  INFO 1688 --- [main] c.e.p.S.SpringbootAngular4Application    : The following profiles are active: common,local
+2018-05-21 12:52:00.765  INFO 1688 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@694abbdc: startup date [Mon May 21 12:52:00 IST 2018]; root of context hierarchy
+2018-05-21 12:52:03.147  INFO 1688 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f7e7158] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 12:52:04.206  INFO 1688 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2018-05-21 12:52:04.286  INFO 1688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-21 12:52:04.286  INFO 1688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-21 12:52:04.566  INFO 1688 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/user]   : Initializing Spring embedded WebApplicationContext
+2018-05-21 12:52:04.566  INFO 1688 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3807 ms
+2018-05-21 12:52:05.601  INFO 1688 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-21 12:52:05.615  INFO 1688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-21 12:52:06.845  INFO 1688 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-21 12:52:06.882  INFO 1688 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-21 12:52:07.107  INFO 1688 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-21 12:52:07.112  INFO 1688 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-21 12:52:07.117  INFO 1688 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-05-21 12:52:07.232  INFO 1688 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-21 12:52:07.798  INFO 1688 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-21 12:52:08.373  WARN 1688 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.example.pramod.SpringbootAngular4.model.User
+2018-05-21 12:52:08.393  INFO 1688 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-05-21 12:52:08.475  INFO 1688 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-21 12:52:08.507 ERROR 1688 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.example.pramod.SpringbootAngular4.model.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1634) ~[spring-beans-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) ~[spring-context-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.13.RELEASE.jar:1.5.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.13.RELEASE.jar:1.5.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.13.RELEASE.jar:1.5.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.13.RELEASE.jar:1.5.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.13.RELEASE.jar:1.5.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.13.RELEASE.jar:1.5.13.RELEASE]
+	at com.example.pramod.SpringbootAngular4.SpringbootAngular4Application.main(SpringbootAngular4Application.java:10) [classes/:na]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.example.pramod.SpringbootAngular4.model.User
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:717) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:245) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360) ~[spring-orm-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:384) ~[spring-orm-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371) ~[spring-orm-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336) ~[spring-orm-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1692) ~[spring-beans-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1630) ~[spring-beans-4.3.17.RELEASE.jar:4.3.17.RELEASE]
+	... 16 common frames omitted
+
+2018-05-21 12:55:04.981  INFO 10092 --- [main] c.e.p.S.SpringbootAngular4Application    : Starting SpringbootAngular4Application on BABEGIRL with PID 10092 (E:\angular\Springboot-Angular4\out\production\classes started by Praveenkumar in E:\angular\Springboot-Angular4)
+2018-05-21 12:55:05.014  INFO 10092 --- [main] c.e.p.S.SpringbootAngular4Application    : The following profiles are active: common,local
+2018-05-21 12:55:05.213  INFO 10092 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@694abbdc: startup date [Mon May 21 12:55:05 IST 2018]; root of context hierarchy
+2018-05-21 12:55:08.206  INFO 10092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ea8a107] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 12:55:09.661  INFO 10092 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2018-05-21 12:55:09.732  INFO 10092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-21 12:55:09.734  INFO 10092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-21 12:55:10.088  INFO 10092 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/user]   : Initializing Spring embedded WebApplicationContext
+2018-05-21 12:55:10.088  INFO 10092 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4880 ms
+2018-05-21 12:55:10.396  INFO 10092 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-21 12:55:10.406  INFO 10092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-21 12:55:11.850  INFO 10092 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-21 12:55:11.882  INFO 10092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-21 12:55:12.007  INFO 10092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-21 12:55:12.007  INFO 10092 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-21 12:55:12.012  INFO 10092 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-05-21 12:55:12.067  INFO 10092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-21 12:55:12.583  INFO 10092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-21 12:55:14.404  INFO 10092 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-05-21 12:55:14.454  INFO 10092 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user
+2018-05-21 12:55:14.459  INFO 10092 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user
+2018-05-21 12:55:14.968  INFO 10092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-21 12:55:17.264  INFO 10092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void com.example.pramod.SpringbootAngular4.controller.UserController.saveUser(com.example.pramod.SpringbootAngular4.model.User)
+2018-05-21 12:55:17.269  INFO 10092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public java.lang.Iterable<com.example.pramod.SpringbootAngular4.model.User> com.example.pramod.SpringbootAngular4.controller.UserController.getAllUser()
+2018-05-21 12:55:17.271  INFO 10092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public com.example.pramod.SpringbootAngular4.model.User com.example.pramod.SpringbootAngular4.controller.UserController.getUser(java.lang.Long)
+2018-05-21 12:55:17.273  INFO 10092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[DELETE],consumes=[application/json],produces=[application/json]}" onto public void com.example.pramod.SpringbootAngular4.controller.UserController.deleteUser(java.lang.Long)
+2018-05-21 12:55:17.292  INFO 10092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-21 12:55:17.294  INFO 10092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-21 12:55:17.747  INFO 10092 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@694abbdc: startup date [Mon May 21 12:55:05 IST 2018]; root of context hierarchy
+2018-05-21 12:55:19.994  INFO 10092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-21 12:55:20.146  INFO 10092 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9000 (http)
+2018-05-21 12:55:20.156  INFO 10092 --- [main] c.e.p.S.SpringbootAngular4Application    : Started SpringbootAngular4Application in 16.852 seconds (JVM running for 18.247)
+2018-05-21 13:04:21.107  INFO 11468 --- [main] c.e.p.S.SpringbootAngular4Application    : Starting SpringbootAngular4Application on BABEGIRL with PID 11468 (E:\angular\Springboot-Angular4\out\production\classes started by Praveenkumar in E:\angular\Springboot-Angular4)
+2018-05-21 13:04:21.107  INFO 11468 --- [main] c.e.p.S.SpringbootAngular4Application    : The following profiles are active: common,local
+2018-05-21 13:04:21.397  INFO 11468 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@694abbdc: startup date [Mon May 21 13:04:21 IST 2018]; root of context hierarchy
+2018-05-21 13:04:26.981  INFO 11468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$685af348] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 13:04:29.197  INFO 11468 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2018-05-21 13:04:29.327  INFO 11468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-21 13:04:29.327  INFO 11468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-21 13:04:30.078  INFO 11468 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/user]   : Initializing Spring embedded WebApplicationContext
+2018-05-21 13:04:30.078  INFO 11468 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8691 ms
+2018-05-21 13:04:30.769  INFO 11468 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-21 13:04:30.784  INFO 11468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-21 13:04:33.221  INFO 11468 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-21 13:04:33.271  INFO 11468 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-21 13:04:33.476  INFO 11468 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-21 13:04:33.481  INFO 11468 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-21 13:04:33.486  INFO 11468 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-05-21 13:04:33.611  INFO 11468 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-21 13:04:34.122  INFO 11468 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-21 13:04:35.462  INFO 11468 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-05-21 13:04:35.828  INFO 11468 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-21 13:04:37.900  INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public java.lang.Iterable<com.example.pramod.SpringbootAngular4.model.User> com.example.pramod.SpringbootAngular4.controller.UserController.getAllUser()
+2018-05-21 13:04:37.904  INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[DELETE],consumes=[application/json],produces=[application/json]}" onto public void com.example.pramod.SpringbootAngular4.controller.UserController.deleteUser(java.lang.Long)
+2018-05-21 13:04:37.906  INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void com.example.pramod.SpringbootAngular4.controller.UserController.saveUser(com.example.pramod.SpringbootAngular4.model.User)
+2018-05-21 13:04:37.908  INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public com.example.pramod.SpringbootAngular4.model.User com.example.pramod.SpringbootAngular4.controller.UserController.getUser(java.lang.Long)
+2018-05-21 13:04:37.919  INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-21 13:04:37.921  INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-21 13:04:38.345  INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@694abbdc: startup date [Mon May 21 13:04:21 IST 2018]; root of context hierarchy
+2018-05-21 13:04:39.753  INFO 11468 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-21 13:04:39.837  INFO 11468 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9000 (http)
+2018-05-21 13:04:39.847  INFO 11468 --- [main] c.e.p.S.SpringbootAngular4Application    : Started SpringbootAngular4Application in 20.78 seconds (JVM running for 22.572)
+2018-05-21 13:05:32.509  INFO 11468 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/user]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-21 13:05:32.509  INFO 11468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-21 13:05:32.694  INFO 11468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 185 ms
+2018-05-21 13:05:33.280  WARN 11468 --- [http-nio-9000-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Can not deserialize instance of com.example.pramod.SpringbootAngular4.model.User out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of com.example.pramod.SpringbootAngular4.model.User out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@6610623e; line: 1, column: 1]
+2018-05-21 13:06:22.750  WARN 11468 --- [http-nio-9000-exec-3] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/user/] in DispatcherServlet with name 'dispatcherServlet'
+2018-05-21 13:07:08.114  WARN 11468 --- [http-nio-9000-exec-5] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/user/] in DispatcherServlet with name 'dispatcherServlet'
+2018-05-21 13:07:47.433  WARN 11468 --- [http-nio-9000-exec-7] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/user/] in DispatcherServlet with name 'dispatcherServlet'
+2018-05-21 13:10:05.744  WARN 11468 --- [http-nio-9000-exec-10] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/user/] in DispatcherServlet with name 'dispatcherServlet'
+2018-05-21 13:11:26.324  WARN 11468 --- [http-nio-9000-exec-3] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/user/] in DispatcherServlet with name 'dispatcherServlet'
+2018-05-21 13:11:58.352  WARN 11468 --- [http-nio-9000-exec-5] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/user/] in DispatcherServlet with name 'dispatcherServlet'
