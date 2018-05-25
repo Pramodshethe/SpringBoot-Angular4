@@ -15,33 +15,34 @@ import java.awt.*;
 @RequestMapping(value = "/user",
                 produces = MediaType.APPLICATION_JSON_VALUE,
                 consumes = MediaType.APPLICATION_JSON_VALUE)
+@CrossOrigin(origins = "http://localhost:4200",allowedHeaders = "*")
 public class UserController {
 
     @Autowired
     private UserRepository userRepository;
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "/save",method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     @Transactional(Transactional.TxType.REQUIRES_NEW)
     public void saveUser(@RequestBody User user){
         userRepository.save(user);
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value ="/findall" ,method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     @Transactional(Transactional.TxType.NEVER)
     public Iterable<User> getAllUser(){
         return userRepository.findAll();
     }
 
-    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/findone/{id}",method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     @Transactional(Transactional.TxType.NEVER )
     public User getUser(@PathVariable("id") Long id){
         return userRepository.findOne(id);
     }
 
-    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @Transactional(Transactional.TxType.NEVER)
     public void deleteUser(@PathVariable("id") Long id){
